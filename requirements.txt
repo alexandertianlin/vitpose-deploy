@@ -1,0 +1,7 @@
+numpy>=1.24
+opencv-python>=4.8
+opencv-contrib-python>=4.8
+pyrealsense2>=2.50
+mmcv==1.4.8
+mmdet==3.3.0
+mmpose==0.24.0
