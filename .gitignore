@@ -1,0 +1,25 @@
+# Codex system
+.agents/
+.codex/
+
+# Old sessions
+2026-06-16/
+2026-06-17/
+2026-06-18/
+2026-06-26/
+dev-management-system/
+
+# Current session artifacts (not project files)
+2026-06-29/shen/
+2026-06-29/.agents/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime logs
+**/runs/
+
+# Local outputs
+**/outputs/logs/runs/

@@ -1,0 +1,15 @@
+﻿### 6/29 (一)
+- [x] 勘查本地已有代码库，梳理架构
+- [x] 复盘：IMU 四元数由 STM32 Mahony 滤波产出，无需在 Unity 重写积分
+- [x] 修正 P0 计划：聚焦视觉+IMU 融合器开发
+- [x] 同步计划到 GitHub（带技术原理和公式）
+- [x] 确认 D435i + IMU 手套硬件就绪并测试通过
+- [x] 编写 fusion_pipeline.py 核心融合管道
+  - [x] D435i 视频流 + ViTPose 手部检测
+  - [x] HAMER global_orient 旋转矩阵→四元数提取
+  - [x] IMU 串口读取线程（COM122, Stm32Parser）
+  - [x] 互补滤波引擎（Slerp + 动态 alpha）
+  - [x] UDP 发送到 Unity（FusionUDPReceiver.cs 格式，端口 8080）
+- [x] 单元测试通过（四元数数学、Slerp、rotmat_to_quat）
+- [x] 硬件连通性测试通过（D435i 10帧、IMU 6个有效帧）
+- [ ] Unity 端接收验证（待 Unity 场景就绪）

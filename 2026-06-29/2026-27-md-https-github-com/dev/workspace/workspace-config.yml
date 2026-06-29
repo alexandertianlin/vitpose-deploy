@@ -1,0 +1,30 @@
+﻿# Dev Workspace Configuration
+# Generated for IMU+Visual Fusion Pipeline
+
+workspace_config:
+  version: 1
+
+repo_config:
+  main_branch: main
+  parent_branch: main
+  origin: https://github.com/alexandertianlin/agiletact.git
+  # upstream: false  # vanilla repo
+
+workspace_protection:
+  directories:
+    - dev/workspace
+    - .claude/rules
+
+workspace:
+  name: IMU+Visual Fusion Pipeline
+  description: >
+    IMU glove + D435i visual fusion for real-time hand tracking.
+    P0: Complementary filter (Slerp) between STM32 IMU quaternion 
+    and HAMER visual global_orient. Python fusion_pipeline.py sends 
+    fused data to Unity via UDP (8080).
+  tasks:
+    - "P0 Step 1: Visual angle observation — DONE"
+    - "P0 Step 2: Fusion core logic (Complementary Filter) — DONE"
+    - "P0 Step 3: Reset/recalc mechanism — DONE"
+    - "P0 Step 4: Drift baseline analysis — TODO"
+    - "P0 Step 5: End-to-end validation — TODO"
